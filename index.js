@@ -2,13 +2,16 @@
 
 // Function to change the background color when a button is clicked
 function changeBackgroundColor() {
-  // Implement the function to change background color
+  const backgroundColor = document.body;
+  backgroundColor.style.backgroundColor = "rgb(255, 99, 71)";
 }
 
 // Function to reset the background color when the body is double-clicked
 function resetBackgroundColor() {
-  // Implement the function to reset background color
+  document.body.style.backgroundColor = "";
 }
+
+
 
 // Capture Keyboard Input
 
@@ -31,6 +34,7 @@ function setupEventListeners() {
     .getElementById('changeColorButton')
     .addEventListener('click', changeBackgroundColor)
 
+
   // Attach event listener to reset background color when the body is double-clicked
   document
     .getElementById('resetColorButton')
@@ -42,6 +46,7 @@ function setupEventListeners() {
   // Attach event listener to display user input in real-time as they type
   document.getElementById('textInput').addEventListener('input', displayUserInput)
 }
+
 
 // Initialize event listeners when the DOM is loaded
 if (typeof window !== 'undefined') {
