@@ -2,8 +2,7 @@
 
 // Function to change the background color when a button is clicked
 function changeBackgroundColor() {
-  const backgroundColor = document.body;
-  backgroundColor.style.backgroundColor = "rgb(255, 99, 71)";
+  document.body.style.backgroundColor = "rgb(255, 99, 71)";
 }
 
 // Function to reset the background color when the body is double-clicked
@@ -26,6 +25,9 @@ function displayKeyPress(event) {
 function displayUserInput() {
   // Implement the function to display user input
 }
+
+
+
 
 // Attach Event Listeners
 function setupEventListeners() {
