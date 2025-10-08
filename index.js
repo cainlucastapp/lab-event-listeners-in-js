@@ -20,14 +20,15 @@ function displayKeyPress(event) {
   key.textContent = `Key pressed: ${event.key}`;
 }
 
+
 // Process Text Input
 
 // Function to display user input in real-time
 function displayUserInput() {
-  // Implement the function to display user input
+  const text = document.querySelector("#textInput");
+  const display = document.getElementById("textInputDisplay");
+  display.textContent = `You typed: ${text.value}`;   
 }
-
-
 
 
 // Attach Event Listeners
